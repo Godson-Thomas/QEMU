@@ -37,7 +37,7 @@ sudo make install
 ```
 <br>
 
-<img src="https://github.com/Godson-Thomas/Toochain/menuconfig.png" width="500">  <br><br>
+<img src="https://github.com/Godson-Thomas/Toolchain/blob/master/menuconfig.png" width="500">  <br><br>
 
 
 
@@ -115,7 +115,7 @@ cd ~/x-tools/arm-unknown-linux-gnueabi/bin
 
 <br>
 
-<img src="https://github.com/Godson-Thomas/Toochain/elinuxboot.png" width="500">  <br><br>
+<img src="https://github.com/Godson-Thomas/Toolchain/blob/master/elinuxboot.PNG" width="500">  <br><br>
 
 
 
