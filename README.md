@@ -118,7 +118,7 @@ cd ~/x-tools/arm-unknown-linux-gnueabi/bin
 
 <br>
 
-<img src="https://github.com/Godson-Thomas/Toolchain/blob/master/elinuxboot.PNG" width="600">  <br><br>
+<img src="https://github.com/Godson-Thomas/Toolchain/blob/master/elinuxboot.PNG" width="700">  <br><br>
 
 
 
