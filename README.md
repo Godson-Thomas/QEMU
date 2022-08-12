@@ -1,4 +1,4 @@
-<img src="https://github.com/Godson-Thomas/Toolchain/blob/master/QEMU.PNG" width="300">  <br><br>
+<img src="https://github.com/Godson-Thomas/Toolchain/blob/master/QEMU.PNG" width="200">  <br><br>
 
 
 ## _Installing crosstool-NG_
