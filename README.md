@@ -1,4 +1,4 @@
-<img src="https://github.com/Godson-Thomas/Toolchain/blob/master/QEMU.PNG" width="500">  <br><br>
+<img src="https://github.com/Godson-Thomas/Toolchain/blob/master/QEMU.PNG" width="300">  <br><br>
 
 
 ## _Installing crosstool-NG_
@@ -40,7 +40,7 @@ sudo make install
 ```
 <br>
 
-<img src="https://github.com/Godson-Thomas/Toolchain/blob/master/menuconfig.png" width="500">  <br><br>
+<img src="https://github.com/Godson-Thomas/Toolchain/blob/master/menuconfig.png" width="700">  <br><br>
 
 
 
