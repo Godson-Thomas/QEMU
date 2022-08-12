@@ -161,7 +161,7 @@ cd ~/u-boot/configs
 
 ## _Testing u-boot with QEMU_
 
-* Install Qemu
+* Install QEMU
 ```
 sudo apt-get install -y qemu-kvm qemu virt-manager virt-viewer libvirt-bin
 ```
