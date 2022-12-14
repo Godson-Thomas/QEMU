@@ -1,5 +1,7 @@
 <img src="https://github.com/Godson-Thomas/Toolchain/blob/master/QEMU.PNG" width="200">  <br><br>
 
+# [crosstool NG,uboot]
+
 
 ## _Installing crosstool-NG_
 
@@ -171,4 +173,72 @@ sudo apt-get install -y qemu-kvm qemu virt-manager virt-viewer libvirt-bin
 cd ~/u-boot
 
 qemu-system-arm -M virt -nographic -no-reboot -bios u-boot.bin
+```
+
+# [Running custom Linux kernel in Qemu: x86_64 based architecture]
+
+# Cross compilation setup
+
+
+
+```
+$ export ARCH=x86_64
+```
+
+```
+$ make x86_64_defconfig
+```
+
+```
+$ make menuconfig
+```
+
+![enabling_compiler](https://user-images.githubusercontent.com/60534517/207508941-af0ddf3b-31d3-4915-82c0-bf456e30ac25.png)
+
+
+![enabling_compiler_debug2](https://user-images.githubusercontent.com/60534517/207509005-c262c5b0-6340-4046-8aa2-410cf1004826.png)
+
+
+![Enabling_](https://user-images.githubusercontent.com/60534517/207509733-b3a3eeaf-7592-4080-9bb8-3b448f356f4d.png)
+
+
+```
+$ make
+```
+
+# Setting up Qemu
+
+$ sudo apt install qemu qemu-system
+
+
+$ qemu-system-x86_64 -no-kvm -kernel arch/x86/boot/bzImage -hda /dev/zero -append "root=/dev/zero console=ttyS0" -serial stdio -display none
+
+- Error: Root file system mount
+
+# Creating a root file system from buildroot project
+
+```
+$ git clone git://git.buildroot.net/buildroot
+$ cd buildroot
+```
+
+```
+$ make menuconfig
+
+```
+* Select architecture and file system type
+
+
+![Arch](https://user-images.githubusercontent.com/60534517/207510538-8164efe2-6593-48d8-9b00-2bd6458ac1aa.png)<br>
+
+
+![rootfs](https://user-images.githubusercontent.com/60534517/207510737-e2b92228-7456-4e04-b63d-9898d91d8209.png)
+
+```
+$ make
+```
+## Run qemu with own Linux Kernel and Root file system
+
+```
+qemu-system-x86_64 -kernel arch/x86/boot/bzImage -boot c -m 2049M -hda ../buildroot/output/images/rootfs.ext4  -append "root=/dev/sda rw console=ttyS0,115200 acpi=off nokaslr" -serial stdio -display none
 ```
