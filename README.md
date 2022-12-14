@@ -177,7 +177,7 @@ qemu-system-arm -M virt -nographic -no-reboot -bios u-boot.bin
 
 # [Running custom Linux kernel in Qemu: x86_64 based architecture]
 
-# _Cross compilation setup_
+## _Cross compilation setup_
 
 
 
@@ -215,7 +215,7 @@ $ qemu-system-x86_64 -no-kvm -kernel arch/x86/boot/bzImage -hda /dev/zero -appen
 
 - Error: Root file system mount
 
-# Creating a root file system from buildroot project
+## Creating a root file system from buildroot project
 
 ```
 $ git clone git://git.buildroot.net/buildroot
