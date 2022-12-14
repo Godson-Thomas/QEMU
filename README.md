@@ -177,7 +177,7 @@ qemu-system-arm -M virt -nographic -no-reboot -bios u-boot.bin
 
 # [Running custom Linux kernel in Qemu: x86_64 based architecture]
 
-# Cross compilation setup
+# _Cross compilation setup_
 
 
 
@@ -206,7 +206,7 @@ $ make menuconfig
 $ make
 ```
 
-# Setting up Qemu
+## _Setting up Qemu_
 
 $ sudo apt install qemu qemu-system
 
@@ -237,7 +237,7 @@ $ make menuconfig
 ```
 $ make
 ```
-## Run qemu with own Linux Kernel and Root file system
+## _Run qemu with own Linux Kernel and Root file system_
 
 ```
 qemu-system-x86_64 -kernel arch/x86/boot/bzImage -boot c -m 2049M -hda ../buildroot/output/images/rootfs.ext4  -append "root=/dev/sda rw console=ttyS0,115200 acpi=off nokaslr" -serial stdio -display none
